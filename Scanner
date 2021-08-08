@@ -1,0 +1,29 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter your name ");
+        String name = scan.next();
+//        System.out.println("Your name is " +name);
+
+        System.out.println("Enter your age ");
+        int age = scan.nextInt();
+//        System.out.println("YOur are " +age+ "years old");
+
+        System.out.println("Enter the amount of dollar you want to withdraw");
+        Double dollar = scan.nextDouble();
+
+        System.out.println("enter your favourite quote");
+        String quote = scan.next(); // if you just this java will only print the first word of the quote that you entered
+        quote = quote+scan.nextLine(); // but if you do it like this you will be able to print the whole quote
+        System.out.println("the quote you entered is " +quote);
+
+        System.out.println("Your name is "+name+" and you are "+age+ " years old and you are withdrawing " +dollar+" money");
+
+
+    }
+}
